@@ -43,8 +43,18 @@
          (ack! collector tuple)
          )))))
 
-(defn mk-topology []
+;; (shell-bolt-spec {"1" :shuffle "2" ["id"]}
+;;                  "python"
+;;                  "mybolt.py"
+;;                  ["outfield1" "outfield2"]
+;;                  :p 25)
 
+
+;; { :component-id spout-or-bolt-spec }
+;; component ids are used when declaring inputs for bolts in the topology.
+
+
+(defn mk-topology []
   (topology
    {"1" (spout-spec sentence-spout)
     "2" (spout-spec (sentence-spout-parameterized
