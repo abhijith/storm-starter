@@ -1,4 +1,1 @@
-## This project has MOVED
-
-It is now part of the Apache project, and you can find it [here](https://github.com/apache/incubator-storm/tree/master/examples/storm-starter)
-
+Nathan Marz's old storm-starter ported to clojure-1.7 and storm 0.10.0
